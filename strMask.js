@@ -8,3 +8,14 @@ function maskHalf(str) {
 
 console.log(maskHalf("watermelon"));
 //"*****melon"
+
+//Replaces str characters from index2-index5 inclusive without using .replace()
+function replaceRange(str) {
+  const first = str.slice(0, 2);
+  const last = str.slice(6);
+  const mask = "*".repeat(4);
+  return first + mask + last;
+}
+
+console.log(replaceRange("Language"));
+//"La****ge"
